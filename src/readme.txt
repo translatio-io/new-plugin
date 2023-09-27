@@ -55,7 +55,7 @@ More information at [Translatio Plugin for Wordpress Getting Started & FAQ](http
 
 Make sure translation is enabled in Translatio Setup page:
 
-<kbd>![Translatio Enable Translation](https://github.com/translatio-io/translatio/blob/master/doc/tmy-enabletranslation.png "Translatio Enable Translation")</kbd>
+<kbd>![Translatio Enable Translation](https://github.com/translatio-io/translatio/blob/main/doc/tmy-enabletranslation.png "Translatio Enable Translation")</kbd>
 
 = Translatio Plugin shows connecting error code 7 in Wordpress
 
