@@ -1,6 +1,6 @@
-=== TMY Globalization ===
+=== Translatio ===
 Contributors: yushao
-Donate link: https://tmysoft.com/solutions.html
+Donate link: https://github.com/translatio-io/translatio
 Tags: i18n, l10n, translation, localization, globalization, multilingual, internationalization, SEO, taxonomies, woocommerce
 Requires at least: 5.0
 Tested up to: 6.0.2
@@ -13,16 +13,16 @@ Make your website multilingual ready at ease with live translation or with suppo
 
 == Description ==
 
-TMY Globalization Plugin is an open source tool for internationalization and localization of Wordpress based websites. TMY Plugin provides two translation workflows:
+Translatio Plugin is an open source tool for internationalization and localization of Wordpress based websites. Translatio Plugin provides two translation workflows:
 
 * Live Translation workflow
 * Full Professional Translation workflow
 
 Live translation workflow provides instant translation based on Google Translate engine. Simply configure the extra languages you want to support through the intutuive setup interface and save, then you are done.
 
-Full Professional workflow provides more control and higher translation quality, which involves extracting the text for translation, translating and integrating back into Wordpress. More specifically TMY plugin hosts your translations locally for proof reading, editing and final publication. You can intergrate machine translation of your choice to prepare your contents, then leveraging fully featured translation editor with any 3rd party translation agencies.
+Full Professional workflow provides more control and higher translation quality, which involves extracting the text for translation, translating and integrating back into Wordpress. More specifically Translatio plugin hosts your translations locally for proof reading, editing and final publication. You can intergrate machine translation of your choice to prepare your contents, then leveraging fully featured translation editor with any 3rd party translation agencies.
 
-TMY Plugin provides multiple ways to handle different development phases of the Wordpress websites with intuitive and easy to use interfaces, some features include:
+Translatio Plugin provides multiple ways to handle different development phases of the Wordpress websites with intuitive and easy to use interfaces, some features include:
 
 * Live Translation powered by Google Translate
 * Support Taxonomies translation, including Categories, Tags
@@ -44,20 +44,20 @@ TMY Plugin provides multiple ways to handle different development phases of the 
 
 == Installation ==
 
-1. Install and Activate "TMY Globalization" from Plugin directory.
-1. Setup the plugin from TMY Globalization -> TMY Setup.
+1. Install and Activate "Translatio" from Plugin directory.
+1. Setup the plugin from Translatio -> Translatio Setup.
 
-More information at [TMY Plugin for Wordpress Getting Started & FAQ](https://github.com/tmysoft/tmy-wordpress)
+More information at [Translatio Plugin for Wordpress Getting Started & FAQ](https://github.com/translatio-io/translatio)
 
 == Frequently Asked Questions ==
 
 = There is no translation after I setup everything 
 
-Make sure translation is enabled in TMY Setup page:
+Make sure translation is enabled in Translatio Setup page:
 
-<kbd>![TMY Enable Translation](https://github.com/tmysoft/tmy-wordpress/blob/master/doc/tmy-enabletranslation.png "TMY Enable Translation")</kbd>
+<kbd>![Translatio Enable Translation](https://github.com/translatio-io/translatio/blob/master/doc/tmy-enabletranslation.png "Translatio Enable Translation")</kbd>
 
-= TMY Plugin shows connecting error code 7 in Wordpress
+= Translatio Plugin shows connecting error code 7 in Wordpress
 
 On CentOS/Feodra Linux system, the error is mostly due to the SE Linux setting which blocks the network connection, using following command to change the SELinux setting: setsebool httpd_can_network_connect on
 
@@ -72,10 +72,10 @@ On CentOS/Feodra Linux system, the error is mostly due to the SE Linux setting w
 6. Language Switcher Locations
 7. Translations Page
 8. 3 Usage Modes
-9. Setup TMY External Editor
-10. TMY External Editor Screen
-11. TMY Globalization Switcher Block
-12. TMY Globalization Switcher Widget
+9. Setup Translatio External Editor
+10. Translatio External Editor Screen
+11. Translatio Switcher Block
+12. Translatio Switcher Widget
 
 == Changelog ==
 
@@ -84,7 +84,7 @@ On CentOS/Feodra Linux system, the error is mostly due to the SE Linux setting w
 
 = 1.8.9 =
 * Wooocmmerce product names in order confirmation translation
-* tmy-globalization i18n domain, POT, Chinese translations
+* translatio-globalization i18n domain, POT, Chinese translations
 
 = 1.8.0 =
 * Wooocmmerce improvements
