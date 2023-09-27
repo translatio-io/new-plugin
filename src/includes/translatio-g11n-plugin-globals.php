@@ -5,12 +5,12 @@
  *
  * @since      1.0.0
  *
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  * @author     Yu Shao <yu.shao.gm@gmail.com>
  */
 
-function tmy_g11n_lang_sanitize( $lang ) {
+function translatio_g11n_lang_sanitize( $lang ) {
 
     $default_lang = get_option('g11n_default_lang', 'English');
     if (strcmp($lang,'')!==0) {
@@ -18,7 +18,7 @@ function tmy_g11n_lang_sanitize( $lang ) {
         if (array_key_exists($lang, $all_langs)) {
             return $lang;
         } else {
-            error_log("Warning tmy_g11n_language_escape, invalid:" . esc_attr($lang) . " reset to: " . esc_attr($default_lang));
+            error_log("Warning translatio_g11n_language_escape, invalid:" . esc_attr($lang) . " reset to: " . esc_attr($default_lang));
             return $default_lang;
         }
     } else {
@@ -27,7 +27,7 @@ function tmy_g11n_lang_sanitize( $lang ) {
 }
 
 
-function tmy_g11n_html_kses_esc( $html ) {
+function translatio_g11n_html_kses_esc( $html ) {
 
     // '<div style="border:1px solid;background-color:#d7dbdd;color:#21618c;font-size:1rem;">';
 
@@ -63,7 +63,7 @@ function tmy_g11n_html_kses_esc( $html ) {
 
 }
 
-function tmy_g11n_available_post_types() {
+function translatio_g11n_available_post_types() {
  
     $post_types = get_post_types( array( 'public' => true ));
     unset($post_types['g11n_translation']); 
@@ -71,7 +71,7 @@ function tmy_g11n_available_post_types() {
 
 }
 
-function tmy_g11n_is_valid_post_type($post_type) {
+function translatio_g11n_is_valid_post_type($post_type) {
  
     $post_types = get_post_types( array( 'public' => true ));
     unset($post_types['g11n_translation']); 
@@ -79,7 +79,7 @@ function tmy_g11n_is_valid_post_type($post_type) {
 
 }
 
-function tmy_g11n_available_post_type_options() {
+function translatio_g11n_available_post_type_options() {
 
     $ret_array = array();
  
@@ -95,7 +95,7 @@ function tmy_g11n_available_post_type_options() {
 
 }
 
-function tmy_g11n_post_type_enabled($post_id, $post_title, $type) {
+function translatio_g11n_post_type_enabled($post_id, $post_title, $type) {
 
     $qualified_taxonomies = get_taxonomies(array("public" => true, "show_ui"=> true), "names", "or");
     if (array_key_exists($type, $qualified_taxonomies)) {

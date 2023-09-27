@@ -1,6 +1,6 @@
 <?php
 
-require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tmy-g11n-translator.php';
+require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tranlatio-g11n-translator.php';
 
 class G11n_Language_Widget extends WP_Widget {
 
@@ -8,13 +8,13 @@ class G11n_Language_Widget extends WP_Widget {
 
     public function __construct()
                 {                      // id_base        ,  visible name
-                    parent::__construct( 'g11n_lang_wg', 'TMY Lanaguage Switcher Widget' );
-         	    $this->translator = new TMY_G11n_Translator();
+                    parent::__construct( 'g11n_lang_wg', 'Translatio Lanaguage Switcher Widget' );
+         	    $this->translator = new Translatio_Translator();
                 }
 
     public function widget( $args, $instance ) {
                     $switcher =  $this->translator->get_language_switcher('widget');
-                    echo tmy_g11n_html_kses_esc($switcher);
+                    echo translatio_g11n_html_kses_esc($switcher);
                     //echo $args['before_widget'], wpautop( $instance['text'] ), $args['after_widget'];
                 }
 

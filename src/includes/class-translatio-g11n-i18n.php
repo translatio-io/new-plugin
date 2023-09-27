@@ -8,8 +8,8 @@
  *
  * @since      1.0.0
  *
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  */
 
 /**
@@ -19,11 +19,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  * @author     Yu Shao <yu.shao.gm@gmail.com>
  */
-class TMY_G11n_i18n {
+class Translatio_i18n {
 
 
 	/**
@@ -31,10 +31,10 @@ class TMY_G11n_i18n {
 	 *
 	 * @since    1.0.0
 	 */
-	public function tmy_load_plugin_textdomain() {
+	public function translatio_load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'tmy-globalization',
+			'translatio-globalization',
 			false,
 			//dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
                         WP_LANG_DIR . '/plugins/' 

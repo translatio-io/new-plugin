@@ -5,8 +5,8 @@
  *
  * @since      1.0.0
  *
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  */
 
 /**
@@ -15,11 +15,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  * @author     Yu Shao <yu.shao.gm@gmail.com>
  */
-class TMY_G11n_Deactivator {
+class Translatio_Deactivator {
 
 	/**
 	 * Short Description. (use period)

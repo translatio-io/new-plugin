@@ -5,8 +5,8 @@
  *
  * @since      1.0.0
  *
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  * @author     Yu Shao <yu.shao.gm@gmail.com>
  */
-class TMY_G11n_Loader {
+class Translatio_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

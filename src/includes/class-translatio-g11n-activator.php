@@ -5,8 +5,8 @@
  *
  * @since      1.0.0
  *
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  */
 
 /**
@@ -15,11 +15,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    TMY_G11n
- * @subpackage TMY_G11n/includes
+ * @package    Translatio
+ * @subpackage Translatio/includes
  * @author     Yu Shao <yu.shao.gm@gmail.com>
  */
-class TMY_G11n_Activator {
+class Translatio_Activator {
 
 	/**
 	 * Short Description. (use period)
@@ -46,7 +46,7 @@ class TMY_G11n_Activator {
                 }
 
                 switch_to_blog($current_blog);
-                update_site_option('tmy_g11n_sites_activated', $activated);
+                update_site_option('translatio_g11n_sites_activated', $activated);
 
         } else {
 

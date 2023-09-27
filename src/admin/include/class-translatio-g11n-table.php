@@ -4,8 +4,8 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
     require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
 }
 
-if ( ! class_exists( 'TMY_G11N_Table' ) ) :
-    class TMY_G11N_Table extends WP_List_Table {
+if ( ! class_exists( 'Translatio_Table' ) ) :
+    class Translatio_Table extends WP_List_Table {
 
 
 public function __construct() {
@@ -23,11 +23,11 @@ public function __construct() {
         public function get_columns() {
             return array(
                 'cb'  => '<input type="checkbox" />',
-                'term_id'      => __('Term ID', 'tmy-globalization'),
-                'name'   => __('Name', 'tmy-globalization'),
-                'slug'   => __('Slug', 'tmy-globalization'),
-                'taxonomy'   => __('Taxonomy', 'tmy-globalization'),
-                'translations'   => __('Translations', 'tmy-globalization'),
+                'term_id'      => __('Term ID', 'translatio-globalization'),
+                'name'   => __('Name', 'translatio-globalization'),
+                'slug'   => __('Slug', 'translatio-globalization'),
+                'taxonomy'   => __('Taxonomy', 'translatio-globalization'),
+                'translations'   => __('Translations', 'translatio-globalization'),
             );
         }
 
@@ -60,9 +60,9 @@ public function __construct() {
                                   {$wpdb->prefix}postmeta as type_meta
                             where id_meta.meta_key=\"orig_post_id\" and
                                   id_meta.meta_value={$row["term_id"]} and
-                                  type_meta.meta_key=\"g11n_tmy_orig_type\" and
+                                  type_meta.meta_key=\"g11n_translatio_orig_type\" and
                                   type_meta.meta_value=\"{$row["taxonomy"]}\" and
-                                  lang_meta.meta_key=\"g11n_tmy_lang\" and
+                                  lang_meta.meta_key=\"g11n_translatio_lang\" and
                                   lang_meta.post_id=type_meta.post_id and
                                   lang_meta.post_id=id_meta.post_id";
                    $lang_rows = $wpdb->get_results( $sql, "ARRAY_A" );
@@ -186,8 +186,8 @@ public function __construct() {
     }
 endif;
 
-if ( ! class_exists( 'TMY_G11N_Text_Table' ) ) :
-    class TMY_G11N_Text_Table extends WP_List_Table {
+if ( ! class_exists( 'Translatio_Text_Table' ) ) :
+    class Translatio_Text_Table extends WP_List_Table {
 
 
 public function __construct() {
@@ -205,10 +205,10 @@ public function __construct() {
         public function get_columns() {
             return array(
                 'cb'  => '<input type="checkbox" />',
-                'text_str'   => __('Text', 'tmy-globalization'),
-                'taxonomy'   => __('Taxonomy', 'tmy-globalization'),
-                'place_holder_id'   => __('Translation Place Holder ID', 'tmy-globalization'),
-                'translations'   => __('Translations', 'tmy-globalization'),
+                'text_str'   => __('Text', 'translatio-globalization'),
+                'taxonomy'   => __('Taxonomy', 'translatio-globalization'),
+                'place_holder_id'   => __('Translation Place Holder ID', 'translatio-globalization'),
+                'translations'   => __('Translations', 'translatio-globalization'),
             );
         }
 
@@ -308,9 +308,9 @@ public function __construct() {
                                   {$wpdb->prefix}postmeta as type_meta
                             where id_meta.meta_key=\"orig_post_id\" and
                                   id_meta.meta_value={$result[0]->ID} and
-                                  type_meta.meta_key=\"g11n_tmy_orig_type\" and
+                                  type_meta.meta_key=\"g11n_translatio_orig_type\" and
                                   type_meta.meta_value=\"post\" and
-                                  lang_meta.meta_key=\"g11n_tmy_lang\" and
+                                  lang_meta.meta_key=\"g11n_translatio_lang\" and
                                   lang_meta.post_id=type_meta.post_id and
                                   lang_meta.post_id=id_meta.post_id";
                     $lang_rows = $wpdb->get_results( $sql, "ARRAY_A" );
