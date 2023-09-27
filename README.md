@@ -34,7 +34,7 @@ Translatio Plugin provides multiple ways to handle different development phases 
 
 <kbd><img src="doc/tmy-addplugin.png" width="450"/></kbd>
 
-Download the plugin zip file from https://github.com/tmysoft/tmy-wordpress/releases, e.g. tmy-globalization-1.0.0.zip 
+Download the plugin zip file from https://github.com/translatio-io/translatio/releases, e.g. tmy-globalization-1.0.0.zip 
 
 Or, search the "Translatio", install it, after successful installation, Translatio main menu should appear in the Wordpress Dashboard as following:
 
@@ -207,7 +207,7 @@ Translatio Premium is designed to help users do translation much easily, when th
 
 ## Configuration and use Translatio Translation Editor(Premium Service)
 
-Register with tmysoft.com, log into the Translatio Web Editor/Zanata, create the API key. Create the project and version of your project.
+Register with translatio.io, log into the Translatio Web Editor/Zanata, create the API key. Create the project and version of your project.
 
 <kbd><img src="doc/tmy-apikey.png" width="600"/></kbd>
 
@@ -221,14 +221,14 @@ Every time when button ![Translatio Translate Button](doc/tmy-translatebutton.pn
 
 ## Translating with Translatio Editor(Premium Service)
 
-Visit `tmysoft.com` then `Editor` or `editor.tmysoft.com` directly.
+Visit `translatio.io` then `Editor` or `editor.translatio.io` directly.
 
 <kbd><img src="doc/tmy-webeditor.png" width="800"/></kbd>
 
 
 ## Using Google Translate to translate your post or pages(Premium Service)
 
-Google Translate is fully integrated into tmysoft.com and Translatio Web Editor, follow the page at [tmysoft.com/subscriptions.html](https://www.tmysoft.com/subscriptions.html) to start.
+Google Translate is fully integrated into translatio.io and Translatio Web Editor, follow the page at [translatio.io](https://www.translatio.io) to start.
 
 ## Pulling translation from Translatio Editor to your local Wordpress instance(Premium Service)
 
@@ -248,7 +248,7 @@ Then, copy and paste the bold lines from the Setup page into your site's .htacce
 
 Translatio Wordpress plugin is following open source license, look at code here:
 
-[https://github.com/tmysoft/tmy-wordpress](https://github.com/tmysoft/tmy-wordpress)
+[https://github.com/translatio-io/translatio](https://github.com/translatio-io/translatio)
 
 Ask questions, submit PRs.
 
@@ -264,7 +264,7 @@ https://developer.wordpress.org/plugins/internationalization/localization/
 
 Or come to Translatio online chat channel.
 
-<kbd>![Translatio Enable Translation](https://github.com/tmysoft/tmy-wordpress/blob/master/doc/tmy-enabletranslation.png "Translatio Enable Translation")</kbd>
+<kbd>![Translatio Enable Translation](https://github.com/translatio-io/translatio/blob/master/doc/tmy-enabletranslation.png "Translatio Enable Translation")</kbd>
 
 ## Translatio Plugin shows connecting error code 7 in Wordpress
 
@@ -277,4 +277,4 @@ On CentOS/Feodra Linux system, the error is mostly due to the SE Linux setting w
 
 ## Getting More Support
 
-If you need further support, reach out to us at [tmysoft.com/subscriptions.html](https://www.tmysoft.com/subscriptions.html)
+If you need further support, reach out to us at [translatio.io](https://www.translatio.io)
