@@ -44,7 +44,7 @@ define( 'WP_TRANSLATIO_DEBUG', false );
  */
 function activate_translatio_g11n( $network_wide ) {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-translatio-g11n-activator.php';
-	translatio_G11n_Activator::activate( $network_wide );
+	Translatio_Activator::activate( $network_wide );
 }
 
 /**
@@ -53,7 +53,7 @@ function activate_translatio_g11n( $network_wide ) {
  */
 function deactivate_translatio_g11n() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-translatio-g11n-deactivator.php';
-	translatio_G11n_Deactivator::deactivate();
+	Translatio_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_translatio_g11n' );
@@ -81,7 +81,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/translatio-g11n-plugin-globals.p
  */
 function run_translatio_g11n() {
 
-	$plugin = new translatio_G11n();
+	$plugin = new Translatio_G11n();
 	$plugin->run();
 
 }

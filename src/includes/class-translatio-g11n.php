@@ -26,7 +26,7 @@
  * @subpackage Translatio/includes
  * @author     Yu Shao <yu.shao.gm@gmail.com>
  */
-class Translatio {
+class Translatio_G11n {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -175,7 +175,7 @@ class Translatio {
 		$this->loader->add_filter( 'views_edit-post', $plugin_admin, 'g11n_edit_posts_views' );
                 $this->loader->add_filter( 'pre_update_option', $plugin_admin,'translatio_plugin_option_update', 10, 3 );
 
-                $all_post_type_options = Translatio_available_post_type_options();
+                $all_post_type_options = translatio_g11n_available_post_type_options();
                 foreach ( $all_post_type_options  as $option_name ) {
 		    $this->loader->add_filter( $option_name, $plugin_admin, 'translatio_plugin_option_update_after', 10, 3 );
                 }
@@ -319,39 +319,39 @@ class Translatio {
 
                 $this->loader->add_filter( 'use_block_editor_for_post', $plugin_public, 'g11n_option_editor_change', 10, 2);
 
-		$this->loader->add_action( 'init', $plugin_public, 'Translatio_blocks_init');
-		$this->loader->add_action( 'template_redirect', $plugin_public, 'Translatio_template_redirect');
+		$this->loader->add_action( 'init', $plugin_public, 'Translatio_g11n_blocks_init');
+		$this->loader->add_action( 'template_redirect', $plugin_public, 'Translatio_g11n_template_redirect');
 		//$this->loader->add_filter( 'site_url', $plugin_public, 'Translatio_site_url', 10, 2);
 
-                //$this->loader->add_filter( 'get_category', $plugin_public, 'translatio_translation_get_taxonomy_filter', 10, 2 );
-                //$this->loader->add_filter( 'get_post_tag', $plugin_public, 'translatio_translation_get_taxonomy_filter', 10, 2 );
-                //$this->loader->add_filter( 'get_product_tag', $plugin_public, 'translatio_translation_get_taxonomy_filter', 10, 2 );
-                //$this->loader->add_filter( 'get_product_cat', $plugin_public, 'translatio_translation_get_taxonomy_filter', 10, 2 );
+                //$this->loader->add_filter( 'get_category', $plugin_public, 'Translatio_translation_get_taxonomy_filter', 10, 2 );
+                //$this->loader->add_filter( 'get_post_tag', $plugin_public, 'Translatio_translation_get_taxonomy_filter', 10, 2 );
+                //$this->loader->add_filter( 'get_product_tag', $plugin_public, 'Translatio_translation_get_taxonomy_filter', 10, 2 );
+                //$this->loader->add_filter( 'get_product_cat', $plugin_public, 'Translatio_translation_get_taxonomy_filter', 10, 2 );
 
                 $all_configed_taxs = get_option('g11n_l10n_props_tax', array());
                 if (is_array($all_configed_taxs)) {
                     if (count($all_configed_taxs) > 0) {
                         foreach ( $all_configed_taxs as $key ) {
-                            $this->loader->add_filter( 'get_' . $key, $plugin_public, 'translatio_translation_get_taxonomy_filter', 10, 2 );
+                            $this->loader->add_filter( 'get_' . $key, $plugin_public, 'Translatio_translation_get_taxonomy_filter', 10, 2 );
                         }
                     }
                 }
 
-                $this->loader->add_filter( 'option_widget_block', $plugin_public, 'translatio_option_widget_block', 10, 2 );
+                $this->loader->add_filter( 'option_widget_block', $plugin_public, 'Translatio_option_widget_block', 10, 2 );
 
-                $this->loader->add_filter( 'option_woocommerce_cheque_settings', $plugin_public, 'translatio_woocommerce_option_filter', 10, 2 );
-                $this->loader->add_filter( 'option_woocommerce_cod_settings', $plugin_public, 'translatio_woocommerce_option_filter', 10, 2 );
-                $this->loader->add_filter( 'woocommerce_cart_item_name', $plugin_public, 'translatio_woocommerce_cart_item_name', 10, 3 );
-                $this->loader->add_filter( 'woocommerce_order_item_name', $plugin_public, 'translatio_woocommerce_order_item_name', 10, 3 );
-                $this->loader->add_filter( 'woocommerce_attribute_label', $plugin_public, 'translatio_woocommerce_attribute_label_filter', 10, 3 );
+                $this->loader->add_filter( 'option_woocommerce_cheque_settings', $plugin_public, 'Translatio_woocommerce_option_filter', 10, 2 );
+                $this->loader->add_filter( 'option_woocommerce_cod_settings', $plugin_public, 'Translatio_woocommerce_option_filter', 10, 2 );
+                $this->loader->add_filter( 'woocommerce_cart_item_name', $plugin_public, 'Translatio_woocommerce_cart_item_name', 10, 3 );
+                $this->loader->add_filter( 'woocommerce_order_item_name', $plugin_public, 'Translatio_woocommerce_order_item_name', 10, 3 );
+                $this->loader->add_filter( 'woocommerce_attribute_label', $plugin_public, 'Translatio_woocommerce_attribute_label_filter', 10, 3 );
 
-                $this->loader->add_action( 'woocommerce_new_order', $plugin_public, 'translatio_woocommerce_new_order', 10, 2 );
-                $this->loader->add_filter( 'nav_menu_item_title', $plugin_public, 'translatio_nav_menu_item_title_filter', 10, 4 );
+                $this->loader->add_action( 'woocommerce_new_order', $plugin_public, 'Translatio_woocommerce_new_order', 10, 2 );
+                $this->loader->add_filter( 'nav_menu_item_title', $plugin_public, 'Translatio_nav_menu_item_title_filter', 10, 4 );
 
-                //$this->loader->add_filter( 'wp_nav_menu_items', $plugin_public, 'translatio_nav_menu_item_filter', 10, 2 );
-                $this->loader->add_filter( 'wp_nav_menu_objects', $plugin_public, 'translatio_nav_menu_objects_filter', 10, 2);
+                //$this->loader->add_filter( 'wp_nav_menu_items', $plugin_public, 'Translatio_nav_menu_item_filter', 10, 2 );
+                $this->loader->add_filter( 'wp_nav_menu_objects', $plugin_public, 'Translatio_nav_menu_objects_filter', 10, 2);
 
-                //$this->loader->add_filter( 'nav_menu_link_attributes', $plugin_public, 'translatio_nav_menu_link_attributes_filter', 15, 4);
+                //$this->loader->add_filter( 'nav_menu_link_attributes', $plugin_public, 'Translatio_nav_menu_link_attributes_filter', 15, 4);
 	}
 
 	/**
