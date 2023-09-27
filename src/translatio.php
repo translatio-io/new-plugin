@@ -13,7 +13,7 @@
  * @package           translatio_G11n
  *
  * @wordpress-plugin
- * Plugin Name:       translatio Globalization
+ * Plugin Name:       Translatio
  * Plugin URI:        https://github.com/translatio-io/translatio
  * Description:       Translating your application into other languages.
  * Version:           1.9.0

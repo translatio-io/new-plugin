@@ -1,6 +1,6 @@
 <?php
 
-require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tranlatio-g11n-translator.php';
+require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-translatio-g11n-translator.php';
 
 class G11n_Language_Widget extends WP_Widget {
 
