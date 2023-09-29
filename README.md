@@ -1,4 +1,4 @@
-# Translatio plugin for Wordpress Getting Started & FAQ
+# Translatio plugin for WordPress Getting Started & FAQ
 
 ----
 
