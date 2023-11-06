@@ -7,9 +7,9 @@ Translatio is an open source tool for internationalization and localization of W
 * Live translation workflow
 * Full professional translation workflow
 
-Live translation workflow provides instant translation based on the Google Translate engine. Simply configure the extra languages you want to support through the intutuive setup interface, save, and then you are done.
+Live translation workflow provides instant translation based on the Google Translate engine. Simply configure the extra languages you want to support through the intuitive setup interface, save, and then you are done.
 
-Full professional workflow provides more control and higher translation quality, which involves extracting the text, undertaking translation and integrating this back into WordPress. Translatio ensures you are always in control by hosting your translations locally for proof reading, editing and final publication. You can intergrate machine translation of your choice to provide a foundation translation, then leverage the fully featured translation editor with any 3rd party translation agencies.
+Full professional workflow provides more control and higher translation quality, which involves extracting the text, undertaking translation and integrating this back into WordPress. Translatio ensures you are always in control by hosting your translations locally for proof reading, editing and final publication. You can integrate machine translation of your choice to provide a foundation translation, then leverage the fully featured translation editor with any 3rd party translation agencies.
 
 Translatio provides multiple ways to handle different development phases of your WordPress website, with intuitive and easy to use interfaces. 
 Some features include:
@@ -19,7 +19,7 @@ Some features include:
 * Support for the new block Gutenberg editor and classic editor
 * Support for Google Translate integration with editing capability
 * Language switcher options include:
-  * Draggable floating meanu
+  * Draggable floating menu
   * Sidebar widget
   * Along with title or description
   * With any page or post
