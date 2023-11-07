@@ -1,7 +1,7 @@
 === Translatio ===
 Contributors: yushao
 Donate link: https://github.com/translatio-io/translatio
-Tags: translation, localization, multilingual, woocommerce, language
+Tags: i18n, l10n, translation, localization, globalization, multilingual, internationalization, SEO, taxonomies, woocommerce
 Requires at least: 5.0
 Tested up to: 6.0.2
 Stable tag: 1.9.0
@@ -9,34 +9,34 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Make your website multilingual ready with ease using live translation or support for a full translation cycle, with machine translation integration.
+Make your website multilingual ready at ease with live translation or with support of full translation cycle, with machine translation integration.
 
 == Description ==
 
-Translatio is an open source tool for internationalization and localization of WordPress based websites. Translatio provides two translation workflows:
+Translatio Plugin is an open source tool for internationalization and localization of Wordpress based websites. Translatio Plugin provides two translation workflows:
 
 * Live Translation workflow
 * Full Professional Translation workflow
 
-Live translation workflow provides instant translation using the Google Translate engine. Configure the extra languages you want to support through the interface and save.
+Live translation workflow provides instant translation based on Google Translate engine. Simply configure the extra languages you want to support through the intutuive setup interface and save, then you are done.
 
-Full Professional workflow provides more control and higher translation quality. The workflow involves extracting the text for translation, translating and integrating this back into WordPress. Translatio stores your translations locally in WordPress for proof reading, editing and final publication. You can also intergrate a machine translation application of your choice to prepare your contents, then leverage a fully featured translation editor of your choice.
+Full Professional workflow provides more control and higher translation quality, which involves extracting the text for translation, translating and integrating back into Wordpress. More specifically Translatio plugin hosts your translations locally for proof reading, editing and final publication. You can intergrate machine translation of your choice to prepare your contents, then leveraging fully featured translation editor with any 3rd party translation agencies.
 
-Translatio provides multiple ways to handle different development phases of the WordPress websites with intuitive and easy to use interfaces, some features include:
+Translatio Plugin provides multiple ways to handle different development phases of the Wordpress websites with intuitive and easy to use interfaces, some features include:
 
 * Live Translation powered by Google Translate
-* Support for Taxonomies translation, including Categories and Tags
-* Support for WooCommerce 
-* Translations kept locally in your personal WordPress instance for proof reading, editing and publishing
-* Support for Search Engeine Optimizaion/SEO URL
-* Support for the new block Gutenberg editor and classic editor
-* Support for Google Translate integration with editing capability
-* Language switcher placement options:
+* Support Taxonomies translation, including Categories, Tags
+* Support Woo Commerce 
+* Full cycle to keep translation locally for proof read, edit and publish.
+* Support Search Engeine Optimizaion/SEO URL
+* Support new block Gutenberg editor and classic editor.
+* Support Google Translate integration with editing capability
+* Language switcher based on
   * Draggable floating meanu
   * Sidebar widget
   * Along with title or description
   * With any page or post
-* Language switcher can bet setup to use the language name or country flags
+* Language switcher is in language name or flags
 * Detect browser language setting
 * Support browser cookie
 * Premium service available
@@ -44,22 +44,22 @@ Translatio provides multiple ways to handle different development phases of the 
 
 == Installation ==
 
-1. Install and Activate "Translatio" from the WordPress Plugin directory
-1. Setup the plugin from Translatio -> Translatio Setup
+1. Install and Activate "Translatio" from Plugin directory.
+1. Setup the plugin from Translatio -> Translatio Setup.
 
 More information at [Translatio Plugin for Wordpress Getting Started & FAQ](https://github.com/translatio-io/translatio)
 
 == Frequently Asked Questions ==
 
-= There is no translation after I complete Translatio setup 
+= There is no translation after I setup everything 
 
-Make sure you have enabled translation in the Translatio Setup page:
+Make sure translation is enabled in Translatio Setup page:
 
 <kbd>![Translatio Enable Translation](https://github.com/translatio-io/translatio/blob/main/doc/tmy-enabletranslation.png "Translatio Enable Translation")</kbd>
 
-= Translatio shows connection error code 7 in WordPress
+= Translatio Plugin shows connecting error code 7 in Wordpress
 
-On CentOS/Feodra Linux system, the error is due to the SELinux setting which blocks the network connection. You can use the following command to change the SELinux setting: setsebool httpd_can_network_connect on
+On CentOS/Feodra Linux system, the error is mostly due to the SE Linux setting which blocks the network connection, using following command to change the SELinux setting: setsebool httpd_can_network_connect on
 
 
 == Screenshots ==

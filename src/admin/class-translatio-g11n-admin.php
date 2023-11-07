@@ -551,7 +551,8 @@ class Translatio_Admin {
 
 		?>		
 
-		<div class="wrap"><h1> <?php _e('Translatio Options', 'translatio-globalization') ?></h1>
+                <div class="wrap"><h1> <img style="vertical-align:middle" src="<?php echo plugin_dir_url( __FILE__ ) . 'include/translatio_round.svg'; ?>" width="32" alt="T"> <?php _e('Translatio Options', 'translatio-globalization') ?></h1>
+
 		<form method="post" action="options.php">
 		
 		<?php
@@ -1027,7 +1028,7 @@ RewriteRule . <?php echo esc_attr($home_root); ?>index.php [L]<br>
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
  	    }
             ?>
-            <div class="wrap"><h1> <?php esc_html_e('Translatio Text Translation Manager', 'translatio-globalization') ?></h1>
+            <div class="wrap"><h1><img style="vertical-align:middle" src="<?php echo plugin_dir_url( __FILE__ ) . 'include/translatio_round.svg'; ?>" width="32" alt="T"> <?php esc_html_e('Translatio Text Translation Manager', 'translatio-globalization') ?></h1>
             <?php
 
             $translatio_g11n_dir = dirname( __FILE__ );
@@ -1055,7 +1056,7 @@ RewriteRule . <?php echo esc_attr($home_root); ?>index.php [L]<br>
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
  	    }
             ?>
-            <div class="wrap"><h1> <?php esc_html_e('Translaio Taxonomy Translation Manager', 'translatio-globalization') ?></h1>
+            <div class="wrap"><h1> <img style="vertical-align:middle" src="<?php echo plugin_dir_url( __FILE__ ) . 'include/translatio_round.svg'; ?>" width="32" alt="T"> <?php esc_html_e('Translaio Taxonomy Translation Manager', 'translatio-globalization') ?></h1>
             <?php
 
             //echo "<br>Abc<br>";
@@ -1290,7 +1291,7 @@ RewriteRule . <?php echo esc_attr($home_root); ?>index.php [L]<br>
                     }
 
                     </script>
-                <div class="wrap"><h1> <?php esc_html_e('Translatio Dashboard', 'translatio-globalization') ?></h1>
+                <div class="wrap"><h1> <img style="vertical-align:middle" src="<?php echo plugin_dir_url( __FILE__ ) . 'include/translatio_round.svg'; ?>" width="32" alt="T"> <?php esc_html_e('Translatio Dashboard', 'translatio-globalization') ?></h1>
                 <!--- 
 		<h2>Translation Status:</h2>
                 <button type="button" onclick="G11nGetLocalTranslationStatus()">Refresh Translation Status</button>
@@ -1370,7 +1371,7 @@ RewriteRule . <?php echo esc_attr($home_root); ?>index.php [L]<br>
 
 		?>
 		<div class="wrap">
-                <div class="wrap"><h1> <?php esc_html_e('Translatio Diagnosis', 'translatio-globalization') ?></h1><br>
+                <div class="wrap"><h1><img style="vertical-align:middle" src="<?php echo plugin_dir_url( __FILE__ ) . 'include/translatio_round.svg'; ?>" width="32" alt="T"> <?php esc_html_e('Translatio Diagnosis', 'translatio-globalization') ?></h1><br>
               <?php _e('This Diagnosis tool provides advanced system information on how your site is running and collects the following information:<br><br>
                  - Base system(phpinfo)<br>
                  - Translatio plugin version<br>

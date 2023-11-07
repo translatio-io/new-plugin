@@ -36,7 +36,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'TRANSLATIO_VERSION', '1.9.0' );
-define( 'WP_TRANSLATIO_DEBUG', false );
+define( 'WP_TRANSLATIO_DEBUG', true );
 
 /**
  * The code that runs during plugin activation.
